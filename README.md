@@ -1,5 +1,5 @@
-development environment：
-Apache Version 2.0
-PHP Version 5.6.14
-Laravel Framework version 5.1.21 (LTS)
-mysql Server version: 5.7.9-log MySQL Community Server (GPL)
+    development environment：
+    Apache Version 2.0
+    PHP Version 5.6.14
+    Laravel Framework version 5.1.21 (LTS)
+    mysql Server version: 5.7.9-log MySQL Community Server (GPL)
