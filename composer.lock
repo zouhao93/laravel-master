@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c6026b96e6fa11a641b51a6ba976f5e",
-    "content-hash": "5bd58fd976f1ee3e9611bc37c006ec46",
+    "hash": "0fe10366b23a3ed0f846057593eaf4d0",
+    "content-hash": "ea4557d6ac0d7e88c1e269af1e12e05e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -492,6 +492,55 @@
             "time": "2015-10-28 03:48:55"
         },
         {
+            "name": "latrell/smarty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Latrell/Smarty.git",
+                "reference": "e7a5aaaecd4160d5eaffb41ad21bf14586ccbf7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.phpcomposer.com/files/Latrell/Smarty/e7a5aaaecd4160d5eaffb41ad21bf14586ccbf7b.zip",
+                "reference": "e7a5aaaecd4160d5eaffb41ad21bf14586ccbf7b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/cache": "5.*",
+                "illuminate/config": "5.*",
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0",
+                "smarty/smarty": "3.*@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Latrell\\Smarty\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Latrell Chan",
+                    "email": "i@latrell.me"
+                }
+            ],
+            "description": "This package lets you run Smarty3 on Laravel5 elegantly.",
+            "keywords": [
+                "Smarty 3",
+                "l5",
+                "laravel",
+                "laravel 5",
+                "smarty",
+                "templating",
+                "view"
+            ],
+            "time": "2015-06-08 03:52:33"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.15",
             "source": {
@@ -942,6 +991,61 @@
                 "shell"
             ],
             "time": "2015-07-16 15:26:57"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v3.1.27",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.phpcomposer.com/files/smarty-php/smarty/4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2.zip",
+                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-06-18 00:55:59"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2946,7 +3050,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "latrell/smarty": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
