@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', '2n9I9d3kBsS8eWQlNo9J04QeZTddhiVx'),
+    'key' => env('APP_KEY', 'LGnFzR9elArl0o7JhpmpAde6qgYvk8sP'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -144,7 +144,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Latrell\Smarty\SmartyServiceProvider::class
+
     ],
 
     /*

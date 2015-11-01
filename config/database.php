@@ -48,17 +48,11 @@ return [
 
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' => database_path('database.sqlite'),
+            'database' => storage_path('database.sqlite'),
             'prefix'   => '',
         ],
 
         'mysql' => [
-            'read' => [
-                'host' => '127.0.0.1'
-            ],
-            'write' => [
-                'host' => '127.0.0.1'
-            ],
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
             'database'  => env('DB_DATABASE', 'laravel'),
@@ -119,24 +113,19 @@ return [
 
     'redis' => [
 
-        'cluster' => false,
+        'cluster' => true,
 
         'default' => [
             'host'     => '127.0.0.1',
             'port'     => 6379,
             'database' => 0,
         ],
+        'cache' => [
+            'host'     => '127.0.0.1',
+            'port'     => 6379,
+            'database' => 0,
+        ]
 
     ],
-
-    'memcache' => [
-        'cluster' => false,
-
-        'default' => [
-            'host'     => '127.0.0.1',
-            'port'     => 11211,
-            'database' => 0,
-        ],
-    ]
 
 ];

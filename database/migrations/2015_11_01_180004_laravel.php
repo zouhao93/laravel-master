@@ -12,11 +12,13 @@ class Laravel extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
+        //
+        Schema::create('admin', function(Blueprint $table){
             $table->increments('id');
-            $table->string('title');
-            $table->string('author');
-            $table->text('text');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password', 60);
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -28,6 +30,7 @@ class Laravel extends Migration
      */
     public function down()
     {
-        Schema::drop('articles');
+        //
+        Schema::drop('admin');
     }
 }

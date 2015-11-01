@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0fe10366b23a3ed0f846057593eaf4d0",
-    "content-hash": "ea4557d6ac0d7e88c1e269af1e12e05e",
+    "hash": "dcfd3901b53968b6a70490215ff1d33f",
+    "content-hash": "770e7e363fdd82ffd3ba1d584c21f893",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -364,16 +364,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.21",
+            "version": "v5.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "21a3f2023c2f59dcd5dc3a0ec5d8ab4c9c2f52a9"
+                "reference": "11d9627c7cd4d12b6e884b87daa7a2f898cf54cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://packagist.phpcomposer.com/files/laravel/framework/21a3f2023c2f59dcd5dc3a0ec5d8ab4c9c2f52a9.zip",
-                "reference": "21a3f2023c2f59dcd5dc3a0ec5d8ab4c9c2f52a9",
+                "url": "http://packagist.phpcomposer.com/files/laravel/framework/11d9627c7cd4d12b6e884b87daa7a2f898cf54cb.zip",
+                "reference": "11d9627c7cd4d12b6e884b87daa7a2f898cf54cb",
                 "shasum": ""
             },
             "require": {
@@ -489,56 +489,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-10-28 03:48:55"
-        },
-        {
-            "name": "latrell/smarty",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Latrell/Smarty.git",
-                "reference": "e7a5aaaecd4160d5eaffb41ad21bf14586ccbf7b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://packagist.phpcomposer.com/files/Latrell/Smarty/e7a5aaaecd4160d5eaffb41ad21bf14586ccbf7b.zip",
-                "reference": "e7a5aaaecd4160d5eaffb41ad21bf14586ccbf7b",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/cache": "5.*",
-                "illuminate/config": "5.*",
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0",
-                "smarty/smarty": "3.*@stable"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Latrell\\Smarty\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Latrell Chan",
-                    "email": "i@latrell.me"
-                }
-            ],
-            "description": "This package lets you run Smarty3 on Laravel5 elegantly.",
-            "keywords": [
-                "Smarty 3",
-                "l5",
-                "laravel",
-                "laravel 5",
-                "smarty",
-                "templating",
-                "view"
-            ],
-            "time": "2015-06-08 03:52:33"
+            "time": "2015-10-28 21:58:18"
         },
         {
             "name": "league/flysystem",
@@ -883,6 +834,61 @@
             "time": "2015-10-23 13:21:37"
         },
         {
+            "name": "predis/predis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "6bc1a38123f61efde92d8b4a73adabf168e09442"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.phpcomposer.com/files/nrk/predis/6bc1a38123f61efde92d8b4a73adabf168e09442.zip",
+                "reference": "6bc1a38123f61efde92d8b4a73adabf168e09442",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete PHP client library for Redis",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2015-07-30 18:51:15"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -991,61 +997,6 @@
                 "shell"
             ],
             "time": "2015-07-16 15:26:57"
-        },
-        {
-            "name": "smarty/smarty",
-            "version": "v3.1.27",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://packagist.phpcomposer.com/files/smarty-php/smarty/4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2.zip",
-                "reference": "4537d8aae6c4a26f5439bc3a05d3437d25c2c4d2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "libs/Smarty.class.php",
-                    "libs/SmartyBC.class.php",
-                    "libs/sysplugins/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Monte Ohrt",
-                    "email": "monte@ohrt.com"
-                },
-                {
-                    "name": "Uwe Tews",
-                    "email": "uwe.tews@googlemail.com"
-                },
-                {
-                    "name": "Rodney Rehm",
-                    "email": "rodney.rehm@medialize.de"
-                }
-            ],
-            "description": "Smarty - the compiling PHP template engine",
-            "homepage": "http://www.smarty.net",
-            "keywords": [
-                "templating"
-            ],
-            "time": "2015-06-18 00:55:59"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3051,7 +3002,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "latrell/smarty": 20
+        "predis/predis": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
