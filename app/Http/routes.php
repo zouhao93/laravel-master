@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('init', 'HomeController@init');
+
+//Route::get('setting', 'MyController@init');
+
+
