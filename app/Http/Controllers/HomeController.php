@@ -7,12 +7,14 @@
  */
 namespace App\Http\Controllers;
 
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\View;
 
-class HomeController extends MyController
+class HomeController extends FrontController
 {
-    public function init()
+    public function init(Route $route)
     {
+        $this->share('loadScript', true);
         return view('welcome/welcome');
     }
 }
