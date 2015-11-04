@@ -3,31 +3,39 @@
  */
 requirejs.config({
     baseUrl: app.baseUrl + '/',
-    //urlArgs: 'v=' + app.version,
+    urlArgs: 'ver=' + app.version,
     waitSeconds: 0,
-    path: {
+    paths: {
         'modulejs' : app.modulejs,
-        'jquery' : 'lib/jquery/jquery-2.1.4.min',
+        'jquery' : 'lib/jquery/jquery.min',
         'domReady' : 'domReady',
         'bootstrap' : 'lib/bootstrap/js/bootstrap.min',
         'bootstrap-notify' : 'lib/bootstrap-notify/bootstrap-notify.min'
+    },
+    shim: {
+        'bootstrap': {
+            deps : 'jquery',
+            exports : 'bootstrap'
+        }
     }
 });
 
 require(['domReady', 'bootstrap-notify'], function (domReady) {
     domReady(function () {
+        require(['bootstrap']);
+        require(['jquery']);
         if (app.loadScript) {
-            //require();
-            alert('123');
+            require(['modulejs']);
         }
     });
 });
 
 function loadCss(url)
 {
-    var link = document.createElement(link);
+    var link = document.createElement('link');
     link.type = 'text/css';
     link.rel = 'stylesheet';
-    link.href = app.baseUrl+url;
-    document.getElementsByTagName('head')[0].append(link);
+    link.href = url;
+    var head = document.getElementsByTagName('head')[0];
+    head.appendChild(link);
 }

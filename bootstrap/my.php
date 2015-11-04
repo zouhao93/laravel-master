@@ -10,4 +10,22 @@ define('APP_ROOT', dirname(dirname(__FILE__)));
 define('JSDIR', '/plugin/js');
 define('CSSDIR', '/plugin/css');
 
+ini_set('include_path',
+    APP_ROOT.'/app/services'.PATH_SEPARATOR.
+    APP_ROOT.PATH_SEPARATOR.
+    ini_get('include_path'));
+
+class Classloader
+{
+    public static function loader($class)
+    {
+        $classFile = strtolower($class).'.php';
+        if(file_exists($classFile)){
+            require_once($classFile);
+        }
+    }
+}
+
+spl_autoload_register(array('Classloader', 'loader'), true, true);
+
 

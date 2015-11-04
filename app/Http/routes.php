@@ -11,6 +11,8 @@
 |
 */
 
+$uri = $_SERVER['HTTP_HOST'];
+var_dump($uri);
 Route::get('init', 'HomeController@init');
 
 //Route::get('setting', 'MyController@init');
