@@ -8,7 +8,7 @@
 $host = $_SERVER['HTTP_HOST'];
 define('APP_ROOT', dirname(dirname(__FILE__)));
 define('JSDIR', '/plugin/js');
-define('CSSDIR', '/plugin/css');
+define('CSSDIR', '/');
 
 ini_set('include_path',
     APP_ROOT.'/app/services'.PATH_SEPARATOR.

@@ -20,7 +20,7 @@ requirejs.config({
     }
 });
 
-require(['domReady', 'bootstrap-notify'], function (domReady) {
+require(['domReady', 'bootstrap-notify'], function (domReady, notify) {
     domReady(function () {
         require(['bootstrap']);
         require(['jquery']);
@@ -29,13 +29,13 @@ require(['domReady', 'bootstrap-notify'], function (domReady) {
         }
     });
 });
-
-function loadCss(url)
-{
-    var link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = url;
-    var head = document.getElementsByTagName('head')[0];
-    head.appendChild(link);
-}
+//
+//function loadCss(url)
+//{
+//    var link = document.createElement('link');
+//    link.type = 'text/css';
+//    link.rel = 'stylesheet';
+//    link.href = url;
+//    var head = document.getElementsByTagName('head')[0];
+//    head.appendChild(link);
+//}

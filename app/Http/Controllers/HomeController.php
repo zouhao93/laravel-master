@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\View;
 
 class HomeController extends FrontController
 {
-    public function init(Route $route)
+    public function init()
     {
         $this->share('loadScript', true);
         return view('welcome/welcome');

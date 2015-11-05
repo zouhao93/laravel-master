@@ -19,6 +19,7 @@ class FrontController extends Controller
     protected $_jsPath;
     protected $_cssPath;
     protected $_uri;
+    protected $_action;
     protected $_controller;
     //init
     public function __construct(Route $route)
@@ -27,12 +28,11 @@ class FrontController extends Controller
         $this->_cssPath = CSSDIR;
         $version = time();
         $this->_uri = $route->getUri();
-        $controller_uri = explode('\\', $route->getActionName());
-        $controller_uri = $controller_uri[count($controller_uri) - 1 ];
-        $controller_uri = explode('@', $controller_uri);
-        $this->_controller = strtolower(str_replace('Controller', '', $controller_uri[0]));
+        $controller_uri = explode('/', $this->_uri);
+        $this->_controller = strtolower($controller_uri[0]);
+        $this->_action = strtolower($controller_uri[1]);
         $this->share('controller', $this->_controller);
-        $this->share('uri', $this->_uri);
+        $this->share('action', $this->_action);
         $this->share('version', $version);
         $this->share('jsPath', $this->_jsPath);
         $this->share('cssPath', $this->_cssPath);
